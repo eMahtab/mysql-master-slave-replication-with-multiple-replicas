@@ -164,3 +164,9 @@ One of the most important parameter is **`Seconds_Behind_Source`** which tells h
 
 !["Start slave for replication"](start-five-replica.png?raw=true)
 
+## Step 6 : Pause some of the containers running mysql replica (we pause the containers running mysql-slave-3, mysql-slave-4 and mysql-slave-5)
+
+!["Pause containers running mysql-slave-3, mysql-slave-4, mysql-slave-5"](pause-containers.png?raw=true)
+
+
+
