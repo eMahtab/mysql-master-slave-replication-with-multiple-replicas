@@ -199,3 +199,12 @@ mysql-slave-3, mysql-slave-4 and mysql-slave-5 these three replicas are lagging 
 
 !["Check Replica lag Status"](replica-lag-status.png?raw=true)
 
+## Step 9 : Replication progressing on previously disconnected slaves
+
+!["Replication progressing on slaves"](slaves-replicating.png?raw=true)
+
+
+
+
+
+
