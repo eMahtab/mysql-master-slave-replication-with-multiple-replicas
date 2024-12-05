@@ -168,7 +168,7 @@ One of the most important parameter is **`Seconds_Behind_Source`** which tells h
 
 !["Pause containers running mysql-slave-3, mysql-slave-4, mysql-slave-5"](pause-containers.png?raw=true)
 
-## Execute a procedure on MySQL master we inserts 10,000 records in the users table
+## Step 7 : Execute a procedure on MySQL master we inserts 10,000 records in the users table
 
 Execute the below commands one by one on the MySQL master
 
