@@ -8,6 +8,9 @@ In this example we will setup one mysql master and five mysql replicas. So it wi
 ## Step 1 : Create the Docker compose file and execute docker compose up, to start a single MySQL master and five MySQL replicas
 
 Below docker-compose-more-replica.yml declares six services, named as `mysql_master, mysql_slave_1, mysql_slave_2, mysql_slave_3, mysql_slave_4, mysql_slave_5` (in docker compose file actual containers are named as `mysql-master, mysql-slave-1, mysql-slave-2, mysql-slave-3, mysql-slave-4, mysql-slave-5`). We are using **mysql:8.0** as the docker image, and declare root user password as toor and create a test database. **Make sure docker engine is running on your host machine before running the docker compose up command.**
+
+Execute the command `docker compose -f docker-compose-more-replica.yml up`
+
 ```yml
 ---
 version: "2"
@@ -121,3 +124,5 @@ volumes:
   mysql-replica4-volume:
   mysql-replica5-volume:
 ```
+
+!["starting single master and five replicas"](one-master-five-replicas.png?raw=true)
