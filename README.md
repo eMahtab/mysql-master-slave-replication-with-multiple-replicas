@@ -136,4 +136,5 @@ GRANT REPLICATION SLAVE ON *.* TO 'replicator'@'%';
 FLUSH PRIVILEGES;
 ```
 Here we create a replication user called `replicator` with password `rotacilper` and grant this user **`REPLICATION SLAVE`** privilege, and finally flush privileges.
+
 !["Create Replication user on Master"](create-replication-user.png?raw=true)
