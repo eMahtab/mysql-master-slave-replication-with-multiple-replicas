@@ -168,7 +168,7 @@ One of the most important parameter is **`Seconds_Behind_Source`** which tells h
 
 !["Pause containers running mysql-slave-3, mysql-slave-4, mysql-slave-5"](pause-containers.png?raw=true)
 
-## Step 7 : Execute a procedure on MySQL master we inserts 10,000 records in the users table
+## Step 7 : Execute a procedure on MySQL master which inserts 10,000 records in the users table
 
 Execute the below commands one by one on the MySQL master
 
@@ -188,8 +188,8 @@ END$$
 
 DELIMITER ;
 ```
-`CALL insert_users();`
-```
+
+**`CALL insert_users();`**
 
 It will insert 10,000 users to `users` table on master, and the data will be replicated to replicas asynchronously, since slave-3, slave-4 and slave-5 are disconnected, the data can't be replicated to disconnected slaves. **So slave-3, slave-4 and slave-5 will lag behind and won't have the records initially** , but whenever the disconnected slaves gets connected to master, the replication will be started and eventually the replicas will catch up with master after some time.  
 
