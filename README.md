@@ -138,3 +138,8 @@ FLUSH PRIVILEGES;
 Here we create a replication user called `replicator` with password `rotacilper` and grant this user **`REPLICATION SLAVE`** privilege, and finally flush privileges.
 
 !["Create Replication user on Master"](create-replication-user.png?raw=true)
+
+## Step 3 : Execute SHOW MASTER STATUS on MySQL Master 
+Get the master status, execute the command **`SHOW MASTER STATUS;`** on Mysql Master to find the Binlog file and position.
+
+!["Get Master status"](show-master-status.png?raw=true)
