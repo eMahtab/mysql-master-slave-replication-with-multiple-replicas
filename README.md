@@ -195,7 +195,7 @@ It will insert 10,000 users to `users` table on master, and the data will be rep
 
 ## Step 8 : First start the Paused docker containers and then check the replica lag status
 
-mysql-slave-3, mysql-slave-4 and mysql-slave-5 these three replicas are lagging behind master because they were disconnected from master for some time.
+mysql-slave-3, mysql-slave-4 and mysql-slave-5 these three replicas are lagging behind master **(check the parameter `Seconds_Behind_Master` in the SHOW SLAVE STATUS; command output)** because they were disconnected from master for some time.
 
 !["Check Replica lag Status"](replica-lag-status.png?raw=true)
 
