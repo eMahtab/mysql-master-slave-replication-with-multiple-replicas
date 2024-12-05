@@ -152,8 +152,8 @@ CHANGE MASTER TO
   MASTER_PORT=3306,
   MASTER_USER='replicator',
   MASTER_PASSWORD='rotacilper',
-  MASTER_LOG_FILE='bin.000004',
-  MASTER_LOG_POS=871,
+  MASTER_LOG_FILE='bin.000003',
+  MASTER_LOG_POS=868,
   GET_MASTER_PUBLIC_KEY=1;
 ```
 !["Execute Change Master to command on MySQL Slave"](change-master-to.png?raw=true)
