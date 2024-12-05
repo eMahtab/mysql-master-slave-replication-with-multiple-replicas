@@ -203,8 +203,14 @@ mysql-slave-3, mysql-slave-4 and mysql-slave-5 these three replicas are lagging 
 
 !["Replication progressing on slaves"](slaves-replicating.png?raw=true)
 
+## Step 10 : Replicas catching up with master
+
+You would see over time all replicas will catch up with master and none of the replicas will be behind master.
+
+!["Replicas catching up with master"](replicas-catching-up-with-master.png?raw=true)
 
 
+## References :
 
-
+1. https://github.com/eMahtab/mysql-master-slave-replication
 
