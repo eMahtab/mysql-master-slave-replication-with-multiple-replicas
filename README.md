@@ -193,7 +193,9 @@ DELIMITER ;
 
 It will insert 10,000 users to `users` table on master, and the data will be replicated to replicas asynchronously, since slave-3, slave-4 and slave-5 are disconnected, the data can't be replicated to disconnected slaves. **So slave-3, slave-4 and slave-5 will lag behind and won't have the records initially** , but whenever the disconnected slaves gets connected to master, the replication will be started and eventually the replicas will catch up with master after some time.  
 
-## Step 8 : Check the replica lag status
+## Step 8 : First start the Paused docker containers and then check the replica lag status
+
+mysql-slave-3, mysql-slave-4 and mysql-slave-5 these three replicas are lagging behind master because they were disconnected from master for some time.
 
 !["Check Replica lag Status"](replica-lag-status.png?raw=true)
 
